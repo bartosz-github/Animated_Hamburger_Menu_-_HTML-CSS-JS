@@ -57,6 +57,6 @@ nav {
 }
 
 .hamburger-menu.active .bar-bottom {
-    transform: translate(-50%, -50%) rotate(225deg);
+    transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;
 }
