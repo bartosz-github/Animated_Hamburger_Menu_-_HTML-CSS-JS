@@ -1,3 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: slategray;
+    background-color: #ccc;
+}
+
+nav {
+    padding: 1rem;
+    background-color: #222;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+
+.ham-bar {
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+
+.bar-top {
+    top:25%;
+}
+
+.bar-bottom {
+    top:75%;
 }
