@@ -19,16 +19,15 @@ nav {
 }
 
 .hamburger-menu {
-    background-color: red;
+    /* background-color: red; */
     height: 50px;
     width: 50px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
-}
+}  
 
-
-.ham-bar {
+.ham-bar { 
     width: 70%;
     height: 4px;
     background-color: white;
@@ -46,4 +45,18 @@ nav {
 
 .bar-bottom {
     top:75%;
+}
+
+.hamburger-menu.active .bar-top{
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+
+.hamburger-menu.active .bar-mid{
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(225deg);
+    top: 50%;
 }
